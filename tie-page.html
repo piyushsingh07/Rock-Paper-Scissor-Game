@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Win</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="rps-score-box">
+        <div class="title">
+            ROCK<br>
+            PAPER<br>
+            SCISSORS
+        </div>
+        <div class="score-container">
+            <div class="score-box">
+                <label for="computer-score">Computer<br> Score</label>
+                <span id="computer-score">0</span>
+            </div>
+            <div class="score-box">
+                <label for="player-score">Your <br>Score</label>
+                <span id="player-score">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="result-container">
+        <div class="choice-result" id="player-choice">
+            <p>YOU PICKED</p>
+            <div class="choice-circle">
+                <img src="" alt="Player Choice">
+            </div>
+        </div>
+        <div class="result-message">
+            <h2 id="result-message">TIE UP</h2>
+            <button id="play-again-btn">REPLAY</button>
+        </div>
+        <div class="choice-result" id="computer-choice">
+            <p>PC PICKED</p>
+            <div class="choice-circle">
+                <img src="" alt="Computer Choice">
+            </div>
+        </div>
+    </div>
+
+    <button id="rules-btn" class="rules-btn">RULES</button>
+
+    <div id="rules-popup" class="rules-popup">
+        <button id="close-rules" class="close-btn">X</button>
+        <h2>Game Rules</h2>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+            <li>If both players lay down the same hand, each player lays down another hand.</li>
+        </ul>
+    </div>
+
+    <script src="tie.js"></script>
+</body>
+</html>
